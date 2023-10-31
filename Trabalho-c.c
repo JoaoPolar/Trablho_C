@@ -39,7 +39,7 @@ void listarRegistros(const struct Registro *registros, int quantidade)
 {
     if (quantidade == 0)
     {
-        printf("Nenhum registro encontrado.\n");
+        printf("-----------------------------\n|Nenhum registro encontrado.|\n-----------------------------");
         return;
     }
 
@@ -56,6 +56,9 @@ void listarRegistros(const struct Registro *registros, int quantidade)
 
 int main()
 {
+
+    system("mode 55,25");
+
     struct Registro registros[100]; // array de registros
     int quantidade = 0;             // numero atual de registros
 
@@ -72,20 +75,29 @@ int main()
         switch (opcao)
         {
         case 1:
+
             system("cls");
             adicionarRegistro(registros, &quantidade);
             break;
+
         case 2:
+
             system("cls");
             listarRegistros(registros, quantidade);
             break;
+
         case 3:
+
             system("cls");
             printf("Encerrando o programa.\n");
+
             return 0;
+
         default:
+
             system("cls");
             printf("Opcao invalida. Tente novamente.\n");
+
         }
     }
 }
