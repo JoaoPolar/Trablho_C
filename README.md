@@ -1,2 +1,2 @@
 # Trablho_C
- Trabalho da faculdade
+ Trabalho da faculdade deseqnvolvido em c
