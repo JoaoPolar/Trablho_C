@@ -108,40 +108,40 @@ int main()
 
         switch (opcao)
         {
-            case 1:
-                system("cls");
-                adicionarRegistro(registros, &quantidade);
-                break;
-            case 2:
-                system("cls");
-                listarRegistros(registros, quantidade);
-                break;
-            case 3:
-                {
-                    system("cls");
-                    int id_excluir;
-                    printf("Digite o ID do registro que deseja excluir: ");
-                    scanf("%d", &id_excluir);
-                    excluirRegistro(registros, &quantidade, id_excluir);
-                    break;
-                }
-            case 4:
-                {
-                    system("cls");
-                    int id_atualizar;
-                    printf("Digite o ID do registro que deseja atualizar: ");
-                    scanf("%d", &id_atualizar);
-                    atualizarRegistro(registros, quantidade, id_atualizar);
-                    break;
-                }
-            case 5:
-                system("cls");
-                printf("Encerrando o programa.\n");
-                return 0;
-            default:
-                system("cls");
-                printf("Opcao invalida. Tente novamente.\n");
-                break;
+        case 1:
+            system("cls");
+            adicionarRegistro(registros, &quantidade);
+            break;
+        case 2:
+            system("cls");
+            listarRegistros(registros, quantidade);
+            break;
+        case 3:
+        {
+            system("cls");
+            int id_excluir;
+            printf("Digite o ID do registro que deseja excluir: ");
+            scanf("%d", &id_excluir);
+            excluirRegistro(registros, &quantidade, id_excluir);
+            break;
+        }
+        case 4:
+        {
+            system("cls");
+            int id_atualizar;
+            printf("Digite o ID do registro que deseja atualizar: ");
+            scanf("%d", &id_atualizar);
+            atualizarRegistro(registros, quantidade, id_atualizar);
+            break;
+        }
+        case 5:
+            system("cls");
+            printf("Encerrando o programa.\n");
+            return 0;
+        default:
+            system("cls");
+            printf("Opcao invalida. Tente novamente.\n");
+            break;
         }
     }
 }
